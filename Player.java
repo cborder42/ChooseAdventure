@@ -6,6 +6,20 @@ import java.util.*;
 public class Player{
   
   private String name;
+  private String location;
   private int age;
+  private boolean dead;
+  
+  public Player(String n, int a){
+    location = "Chris's room"; 
+    name = n;
+    age = a;
+    dead = true;
+  }
+}
+    
+    
+  
+  
   
   
