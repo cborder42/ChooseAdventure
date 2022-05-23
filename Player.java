@@ -11,6 +11,7 @@ public class Player{
   private int age;
   private boolean dead;
   private boolean dogPet;
+  private boolean winner;
     
   
   //constructor/s
@@ -20,6 +21,7 @@ public class Player{
       age = 94;
       dead = true;
       dogPet = false;
+      winner = false;
   }
   public Player(String n, int a){
     location = "Chris's room"; 
@@ -27,6 +29,7 @@ public class Player{
     age = a;
     dead = true;
     dogPet = false;
+    winner = false;
   }
   
   public Player(String l, String n, int a, boolean d){
@@ -35,6 +38,7 @@ public class Player{
     age = a;
     dead = d;
     dogPet = false;
+    winner = false;
   }
   
   
@@ -71,7 +75,11 @@ public class Player{
      return dogPet();
   }
   
-  
+  //returns if the player has won the game or not
+  public boolean hasWon(){
+    return winner;
+    
+  }
   
   
   // mutator methods
@@ -130,6 +138,10 @@ public class Player{
     
   }
   
+  // set's players status to having won the game
+  public void winGame(){
+    winner = true;
+  }
   
   
 }
