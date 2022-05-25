@@ -120,15 +120,15 @@ public class Player{
       
   }
   
-  // sets player's dead to true
-  public void die(){
+  // sets player's alive to true
+  public void live(){
       alive = true;
   
   }
   
-  // sets player's dead to false
-  public void live(){
-      dead = false;
+  // sets player's alive to false
+  public void die(){
+      alive = false;
   
   }
   
