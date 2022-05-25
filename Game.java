@@ -25,6 +25,7 @@ public class Game{
          while(p1.isLiving() == true && (currentWorld.getStatus() == false)){
             Branch world = new Branch(level);
             currentWorld = world;
+            System.out.println(currentWorld.getName());
             p1.setLoc(currentWorld.getName());
             currentWorld.playGame();
                if(currentWorld.getPass() == true){
