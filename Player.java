@@ -143,6 +143,13 @@ public class Player{
     winner = true;
   }
   
+  //starts new game in chris's class
+  public Branch startGame(){
+      Branch b1 = new Branch(0);
+      return b1; 
+   }
+
+  
   
 }
     
