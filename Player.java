@@ -72,7 +72,7 @@ public class Player{
   
   //returns if player has pet the dog
   public boolean hasPet(){
-     return dogPet();
+     return dogPet;
   }
   
   //returns if the player has won the game or not
