@@ -34,8 +34,7 @@ public class PutImage{
          f = fra;
          JLabel temp = new JLabel(img);
         
-         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-         
+                  
          
          // change the second parameter below if we cant to change where we put the image on the frame, rn it sets it to the center of the frame
          f.add(temp,BorderLayout.CENTER);
