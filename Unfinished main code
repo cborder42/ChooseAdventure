@@ -1,0 +1,40 @@
+public class textdisplays {   
+
+   public String lastMoves[];
+   
+   public runStory(str location) {
+
+   
+   
+   
+      while location = "CBP" {
+         System.out.print("Welcome to the Chris border planet , Do you want to **** or **** or ****")
+         
+         lastMoves += "CBP"
+         
+        if // left button is pressed {
+            String location = "RDR"
+      while location = "RDR" {
+         System.out.print("Welcome to the radar planet, do you want to ** ** or**")
+         
+         lastMoves += "RDR"
+            
+   public static void main(String args[]) {
+   
+      while Player.dead = false {
+         public runStory("CBP");
+         
+         //counts backwards from  lastMove and sets runStory to the last planet hex code they were at
+        
+         
+         
+      }
+   }
+         
+      
+         
+         
+         
+         
+   }
+}
