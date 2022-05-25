@@ -1,0 +1,42 @@
+
+
+import java.util.*;
+import java.awt.*;
+import javax.swing.*;
+
+public class PutImage{
+
+   //method call to display image, takes the JFrame of graphics and the file location of the image as parameters
+   //so to use this method simply call PutImage.displayImage(frame, imagelocation)
+   //example: PutImage.displayImage(fram, "cod.PNG");
+   public static void displayImage(JFrame frams, String place){
+      
+      ImageIcon img = new ImageIcon(place);
+      TimeFrame fram = new TimeFrame(frams, img);
+   
+   }   
+   
+   //class to display the graphics
+   public static class TimeFrame extends JFrame{
+   
+      
+      private JFrame f;
+      public TimeFrame(JFrame fra, ImageIcon img){
+      
+         f = fra;
+         JLabel temp = new JLabel(img);
+        
+         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         
+         
+         // change the second parameter below if we cant to change where we put the image on the frame, rn it sets it to the center of the frame
+         f.add(temp,BorderLayout.CENTER);
+         f.setVisible(true);
+      
+      }
+    
+   }
+
+   
+   
+}
