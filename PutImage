@@ -8,7 +8,15 @@ public class PutImage{
 
    //method call to display image, takes the JFrame of graphics and the file location of the image as parameters
    //so to use this method simply call PutImage.displayImage(frame, imagelocation)
-   //example: PutImage.displayImage(fram, "cod.PNG");
+   /*example: 
+   
+   JFrame fram = new JFrame();
+      //the location of the image in the file is "cod.PNG" (make sure it is in the same folder!)  
+   
+   PutImage.displayImage(fram, "cod.PNG");
+   */
+   
+   
    public static void displayImage(JFrame frams, String place){
       
       ImageIcon img = new ImageIcon(place);
