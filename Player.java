@@ -9,7 +9,7 @@ public class Player{
   private String name;
   private String location;
   private int age;
-  private boolean dead;
+  private boolean alive;
   private boolean dogPet;
   private boolean winner;
     
@@ -19,7 +19,7 @@ public class Player{
       location = "Chris's room";
       name = "Bob";
       age = 94;
-      dead = true;
+      alive = true;
       dogPet = false;
       winner = false;
   }
@@ -27,7 +27,7 @@ public class Player{
     location = "Chris's room"; 
     name = n;
     age = a;
-    dead = true;
+    alive = true;
     dogPet = false;
     winner = false;
   }
@@ -36,7 +36,7 @@ public class Player{
     location = l;
     name = n;
     age = a;
-    dead = d;
+    alive = d;
     dogPet = false;
     winner = false;
   }
@@ -66,7 +66,7 @@ public class Player{
   
   // returns if the player is living
   public boolean isLiving(){
-      return dead;
+      return alive;
   
   }
   
@@ -116,13 +116,13 @@ public class Player{
   
   // sets the status of player for death
   public void setDead(boolean d){
-      dead = d;
+      alive = d;
       
   }
   
   // sets player's dead to true
   public void die(){
-      dead = true;
+      alive = true;
   
   }
   
