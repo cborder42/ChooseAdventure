@@ -12,6 +12,10 @@ public class Player{
   private boolean alive;
   private boolean dogPet;
   private boolean winner;
+  private int code1;
+  private int code2;
+  private int op;
+  
     
   
   //constructor/s
@@ -22,6 +26,9 @@ public class Player{
       alive = true;
       dogPet = false;
       winner = false;
+      code1 = 0;
+      code2 = 0;
+      op = 0;
   }
   public Player(String n, int a){
     location = "Chris's room"; 
@@ -30,19 +37,31 @@ public class Player{
     alive = true;
     dogPet = false;
     winner = false;
+    code1 = 0;
+    code2 = 0;
+    op = 0;
   }
-  
-  public Player(String l, String n, int a, boolean d){
-    location = l;
-    name = n;
-    age = a;
-    alive = d;
-    dogPet = false;
-    winner = false;
-  }
+ 
   
   
   //accessor methods
+  
+  //returns the code of the current location as corresponds w/ branch numbers, only 1 code may be necessary, depends
+  public String getCode1(){
+      return code1;
+    
+  }
+  
+  public String getCode2(){
+    return code2();
+    
+  }
+  
+  // returns the current choice of the player, option 1 or 2
+  public String getOp(){
+    return op;
+    
+  }
   
   //returns the player's name
   public String getName(){
@@ -84,6 +103,24 @@ public class Player{
   
   // mutator methods
   
+  
+  
+  public void setCode1(int i){
+    code1 = i;
+      
+  }
+  
+  public void setCode2(int i){
+      code2 = i;
+    
+  }
+  
+  public void setOp(int i){
+    op = i;
+    
+  }
+
+
   // sets name of player
   public void setName(String n){
       name = n;
