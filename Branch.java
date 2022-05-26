@@ -5,25 +5,69 @@ import java.util.Scanner;
 
 public class Branch{
 
-   private int code;
+   private int code1;
+   private int code2;
    private String name; 
    private boolean pass;
    private boolean hasWon;
    private static int level;
+   private String op1;
+   private String op2;
+   private String imageSpot;
+   private String label;
    
-   public Branch(int c){
+   public Branch(int c1, int c2){
    
-      code = c;
-      convertNumtoString(c);
-      level++;
+      code1 = c1;
+      code2 = c2;
+      convertNumtoString(c1);
+      name+= code2;
+      pass = false;
       hasWon = false;
       
    }
    
-   public int getCode(){
+   public Branch(int c1, int c2, String o1, String o2, String imag, String lab){
+      code1 = c1;
+      code2 = c2;
+      convertNumtoString(c1);
+      name+= " " + code2;
+      pass = false;
+      hasWon = false;
+      op1 = o1;
+      op2 = o2;
+      imageSpot = imag;
+      label = lab;
+   }
    
-      return code;
+   
+   public int getCode1(){
+   
+      return code1;
       
+   }
+   
+   public int getCode2(){
+      return code2;
+   }
+   
+   public String getOp1(){
+      return op1;
+   
+   }
+   
+   public String getOp2(){
+      return op2;
+   }
+   
+   public String getLabel(){
+   
+      return label;
+   }
+   
+   public String getImage(){
+      return imageSpot;
+   
    }
    
    public String getName(){
@@ -38,6 +82,8 @@ public class Branch{
       return hasWon;
    }
    
+   
+   
    public void passLevel(){
       
       pass = true;
@@ -50,12 +96,7 @@ public class Branch{
       
    }
    
-   public Branch moveOn(int a){
    
-      Branch newLevel = new Branch(a);
-      return newLevel;
-   
-   }
    
    public void convertNumtoString(int a){
    
@@ -72,51 +113,7 @@ public class Branch{
       }
       
    }
-   
-   public void playGame(){
-      
-      Scanner scan = new Scanner(System.in); 
-      
-      if(code == 0){
-         System.out.println("will you go to class?");
-         String answer = scan.nextLine();
-         if(answer.equals("yes")){
-            pass = true;
-         }
-         else{
-            pass = false;
-         } 
-      }
-
-      else if(code == 1){
-         System.out.println("what do you want to wear?");
-         System.out.println("plaid");
-         System.out.println("checkered");
-         System.out.println("monochrome");         
-         String answer = scan.nextLine();
-         if(answer.equals("plaid")){
-            pass = true;
-
-         }
-         else{
-            pass = false;
-         }
-      }
-      
-      else if(code == 2){
-         System.out.println("you just pooped can you please flush the toilet?");
-         String answer = scan.nextLine();
-         if(answer.equals("yes")){
-            pass = true;
-         }
-         else{
-            pass = false;
-         }
-      }  
-      
-      else{
-         hasWon = true;
-      } 
+       
+     
  }
- }
-      
+  
