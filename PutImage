@@ -1,26 +1,22 @@
-
-
 import java.util.*;
 import java.awt.*;
 import javax.swing.*;
 
 public class PutImage{
 
-   //method call to display image, takes the JFrame of graphics and the file location of the image as parameters
-   //so to use this method simply call PutImage.displayImage(frame, imagelocation)
-   /*example: 
+   //method call to display image, takes the JFrame of graphics, the file location of the image, as well as a JLabel object as parameters
+   //so to use this method simply call PutImage.displayImage(frame, imagelocation, label)
    
-   JFrame fram = new JFrame();
-      //the location of the image in the file is "cod.PNG" (make sure it is in the same folder!)  
+   // the imageicon is set to be on the label passed as a parameter, so the label must be added to the frame in another class/method
+   // so, rather than adding the image to the Jframe like before, this now updates the label to contain the image
    
-   PutImage.displayImage(fram, "cod.PNG");
-   */
+   //example: PutImage.displayImage(fram, "cod.PNG", lab);
    
    
-   public static void displayImage(JFrame frams, String place){
+   public static void displayImage(JFrame frams, String place, JLabel label){
       
       ImageIcon img = new ImageIcon(place);
-      TimeFrame fram = new TimeFrame(frams, img);
+      TimeFrame fram = new TimeFrame(frams, img, label);
    
    }   
    
@@ -29,21 +25,16 @@ public class PutImage{
    
       
       private JFrame f;
-      public TimeFrame(JFrame fra, ImageIcon img){
+      public TimeFrame(JFrame fra, ImageIcon img, JLabel label){
       
          f = fra;
-         JLabel temp = new JLabel(img);
-        
-                  
+         label.setIcon(img);
          
-         // change the second parameter below if we cant to change where we put the image on the frame, rn it sets it to the center of the frame
-         f.add(temp,BorderLayout.CENTER);
          f.setVisible(true);
       
       }
     
    }
 
-   
    
 }
