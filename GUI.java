@@ -1,3 +1,8 @@
+//this file contains the code for the buttons, JFrame, as well as basically the main game
+// it uses the buttons to allow navigation between the branches
+
+
+
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -15,15 +20,28 @@ public class GUI implements ActionListener {
 
 
 
-
+    //instance variables for GUI class
     int count = 0;
+    
+    //label contains the words for the next question/direction for each step
     JLabel label;
+    
+    //the frame/panel are just the frame the graphics are in
     JFrame frame;
     JPanel panel;
+    
+    //these are the two buttons, each of which have a label. button represents option1 and button2 represents option2
     JButton button;
     JButton button2;
+    
+    //lab2 will contain the imported image on it
     JLabel lab2;
+    
+    // the class also has a player which is the main player going through the game
     Player p;
+    
+    //accessor methods for GUI class
+    
     
     public JLabel getlab1(){
       return label;
@@ -58,8 +76,11 @@ public class GUI implements ActionListener {
       return p;
     }
 
+    //this is the constructor for the GUI class, it takes a Player parameter which is the player in the main game
     public GUI(Player p) {
         this.p = p;
+        
+        //this sets the default start and frame w/ dimensions etc
     
         frame = new JFrame();
         button = new JButton("Option 1");
@@ -103,12 +124,7 @@ public class GUI implements ActionListener {
     }
     
     
-
-    public static void main(String[] args) {
-        Player bob = new Player();
-        
-        new GUI(bob);
-    }
+    // this method is used to start playing the game, simply call GUI.startGame(playerName) and it will start the window, etc
     
     public static void startGame(Player p){
       new GUI(p);
@@ -116,12 +132,14 @@ public class GUI implements ActionListener {
     }
 
     
+    //this sets the players current option to 1
     public void op1(){
       p.setOp(1);
       
       search();
     }
     
+    //this sets the players current option to 2 and calls the search method
     public void op2(){
       p.setOp(2);
       
@@ -129,29 +147,26 @@ public class GUI implements ActionListener {
       
     
     }
+    
+    //this part is for tracking the action/clicking of the buttons
     public void actionPerformed(ActionEvent e) {
         
-        
+        //if the top button is clicked, it calls op1 (explained above)
         if(e.getSource()==button) {
             op1();
-            
-            
-            
+                  
         }
+        
+        //if the lower button is clicked, it calls op2 (explained above)
         else{
             op2();
-           
-            
-            
-            
+
         }
-        
-        
-        
 
     }
     
-     
+     //the search method will direct the player through the main branches of the story
+    // for example a main branch might be the "cave" branch, within the cave branch there would be multiple branch objects of story branches within cave
       public void search(){
          if(p.getCode1() == 1){
          
@@ -160,6 +175,8 @@ public class GUI implements ActionListener {
          
       }
       
+      // this method converts the parameters of the GUI class, updating the labels, image, title, etc
+      // it takes a branch object which will contain all of this imformation
       public void convert(Branch b){
       
          p.setLoc(b.getName());
