@@ -1,6 +1,9 @@
 //this is an example class of how the main branch might look
 //it would be what the code1 variable in player directs to
 // it contains multiple branch objects which are navigated through
+//fair warning there are images being using in the class for the branches which u would need to have downloaded and saved in the same file as all ur other stuff
+//since this is just an example branch, i figure it doesnt matter too much if u have the exact images, so you can just use whatever ya like
+//but for the actual branches we will have to make sure to coordinate on this 
 
 
 //the navigation system in this code works, but is not very 'sleek' to say the least, both the searchCave and findNextCave methods could probably be 
