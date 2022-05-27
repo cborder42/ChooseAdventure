@@ -80,7 +80,7 @@ public class GUI implements ActionListener {
     public GUI(Player p) {
         this.p = p;
         
-        //this sets the default start and frame w/ dimensions etc
+        //this sets the default start and frame w/ dimensions etc this part is very much going to change w/ dimensions so it doesn't look quite as trash ;)
     
         frame = new JFrame();
         button = new JButton("Option 1");
