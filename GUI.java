@@ -43,9 +43,18 @@ public class GUI implements ActionListener {
     // the class also has a player which is the main player going through the game
     Player p;
     
+    // there is also a Dimension object which will hold the size of the frame (full screen)
+    
+    Dimension size1;
+    
+    
     //accessor methods for GUI class
     
-    
+    public Dimension getDim(){
+        return size1;
+        
+    }
+        
     public JLabel getlab1(){
       return label;
     
@@ -83,48 +92,52 @@ public class GUI implements ActionListener {
     public GUI(Player p) {
         this.p = p;
         
-        //this sets the default start and frame w/ dimensions etc this part is very much going to change w/ dimensions so it doesn't look quite as trash ;)
+        //this sets the default start and frame w/ dimensions etc this part could still change, but isnt terrible rn
     
         frame = new JFrame();
-        button = new JButton("Option 1");
-        button2 = new JButton("Option 2");
-        button.setBounds(10,20,120,200);
-        button2.setBounds(20,30,150,300);
+        button = new JButton("Start Game");
+        button2 = new JButton("Start Game but 2~~");
+        
         lab2 = new JLabel();
         
+        size1 = Toolkit.getDefaultToolkit().getScreenSize();
         
+        button.setPreferredSize(new Dimension(size1.width,size1.height/7));
+        button2.setPreferredSize(new Dimension(size1.width,size1.height/7));
 
         button.addActionListener(this);
         button2.addActionListener(this);
+        
 
-        label = new JLabel("Number of clicks: 0");
+        label = new JLabel("Welcome!");
         panel = new JPanel();
-        lab2.setPreferredSize(new Dimension(100,100));  
+        
+        
+        label.setSize(size1.width,size1.height/7);
+        
+        panel.setPreferredSize(new Dimension(size1.width, size1.height)); 
         lab2.setBounds(0,100,100,100);
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
-        panel.setLayout(new GridLayout(0, 1));
-        panel.add(lab2,BorderLayout.CENTER);
+        panel.setLayout(new FlowLayout());
+        
+        
+        panel.add(lab2);
         panel.add(label);
+        
         panel.add(button);
-        panel.add(button2);
-        
-        
-        
+        panel.add(button2);       
 
-        frame.add(panel, BorderLayout.SOUTH);
-        
-        Border border = new LineBorder(Color.ORANGE, 4, true);
-       panel.setBorder(border);
+        frame.add(panel, BorderLayout.CENTER);        
+        Border border = new LineBorder(Color.PINK, 4, true);
+        panel.setBorder(border);
         
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         frame.setTitle("Choose Your Own Adventure!");
         frame.pack();
         frame.setVisible(true);
-        
-        
-
     }
+
     
     
     // this method is used to start playing the game, simply call GUI.startGame(playerName) and it will start the window, etc
@@ -192,13 +205,9 @@ public class GUI implements ActionListener {
          button.setLabel(b.getOp1());
          button2.setLabel(b.getOp2());
          
-         PutImage.displayImage(frame,b.getImage(), lab2);
+         PutImage.displayImage(frame,b.getImage(), lab2, size1);
 
       }
-   
-   
-   
-
-    
+      
 
 }
