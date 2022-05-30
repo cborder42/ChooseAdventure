@@ -1,7 +1,7 @@
 //this file contains the code for the buttons, JFrame, as well as basically the main game
 // it uses the buttons to allow navigation between the branches
-//fair warning rn the dimensions of the frames, labels, etc are kinda scuffed and might not work on ur computer
-//we are working on getting the dimensions and stuff worked out, just don't expect it to be super pretty rn :')
+//fair warning rn the dimensions of the frames, labels, etc arent exactly top quality, but should work
+// feel free to let us know if u have any suggestions for graphics and such, we can try to make that too
 
 
 
