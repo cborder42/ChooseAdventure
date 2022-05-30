@@ -28,7 +28,8 @@ public class GUI implements ActionListener {
     //label contains the words for the next question/direction for each step
     JLabel label;
     
-    //the frame/panel are just the frame the graphics are in
+    //the frame contains the panel & labels, similar to a window
+    //panel is used add the buttons and labels on to the frame
     JFrame frame;
     JPanel panel;
     
@@ -42,7 +43,7 @@ public class GUI implements ActionListener {
     // the class also has a player which is the main player going through the game
     Player p;
     
-    // there is also a Dimension object which will hold the size of the frame (full screen)
+    // there is also a Dimension object that stores the size of the user's screen
     
     Dimension size1;
     
@@ -93,17 +94,22 @@ public class GUI implements ActionListener {
         
         //this sets the default start and frame w/ dimensions etc this part could still change, but isnt terrible rn
     
+        //creating buttons using JButton
         frame = new JFrame();
         button = new JButton("Start Game");
         button2 = new JButton("Start Game but 2~~");
         
         lab2 = new JLabel();
         
+        
+        //size1 stores the dimensions of the user's screen
         size1 = Toolkit.getDefaultToolkit().getScreenSize();
         
+        //setting the button sizes using size1
         button.setPreferredSize(new Dimension(size1.width,size1.height/7));
         button2.setPreferredSize(new Dimension(size1.width,size1.height/7));
 
+        //.addActionListen will register when the button is clicked to perform an action
         button.addActionListener(this);
         button2.addActionListener(this);
         
@@ -114,19 +120,22 @@ public class GUI implements ActionListener {
         
         label.setSize(size1.width,size1.height/7);
         
-        panel.setPreferredSize(new Dimension(size1.width, size1.height)); 
+        
+        panel.setPreferredSize(new Dimension(size1.width, size1.height)); //setting the panel to the size of the user's screen so that the frame is sized to be full screen
         lab2.setBounds(0,100,100,100);
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
         panel.setLayout(new FlowLayout());
         
-        
+        //adding our objects onto the panel to be displayed
         panel.add(lab2);
         panel.add(label);
         
         panel.add(button);
         panel.add(button2);       
 
-        frame.add(panel, BorderLayout.CENTER);        
+        frame.add(panel, BorderLayout.CENTER); 
+        
+        //creating a border for our window
         Border border = new LineBorder(Color.PINK, 4, true);
         panel.setBorder(border);
         
