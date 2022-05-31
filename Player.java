@@ -12,10 +12,14 @@ public class Player{
   private boolean alive;
   private boolean dogPet;
   private boolean winner;
+  //holds the location of the player, code1 is the main branch and code2 is the subbranch
   private int code1;
   private int code2;
+  //holds the option chosen by the user
   private int op;
-  
+  //variables to hold the previous location of the player, follows the same pattern as the codes, just lcode instead
+  private int lcode1;
+  private int lcode2;
     
   
   //constructor/s
@@ -28,7 +32,10 @@ public class Player{
       winner = false;
       code1 = 0;
       code2 = 0;
+      lcode1 = 1;
+      lcode2 = 0;
       op = 0;
+      
   }
   public Player(String n, int a){
     location = "Chris's room"; 
@@ -39,6 +46,8 @@ public class Player{
     winner = false;
     code1 = 0;
     code2 = 0;
+    lcode1 = 1;
+    lcode2 = 0;
     op = 0;
   }
  
@@ -46,6 +55,16 @@ public class Player{
   
   //accessor methods
   
+  //return the last locations
+  public int getLCode1(){
+   return lcode1;
+  
+  }
+  
+  public int getLCode2(){
+   return lcode2;
+  
+  }
   //returns the code of the current location as corresponds w/ branch numbers, only 1 code may be necessary, depends
   public String getCode1(){
       return code1;
@@ -103,8 +122,17 @@ public class Player{
   
   // mutator methods
   
+  //sets the last location
+  public void setLCode1(int i){
+   lcode1 = i;
   
+  }
   
+  public void setLCode2(int i){
+   lcode2 = i;
+  
+  }
+  //sets current location
   public void setCode1(int i){
     code1 = i;
       
