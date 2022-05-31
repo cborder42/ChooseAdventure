@@ -143,6 +143,8 @@ public class GUI implements ActionListener {
         
         frame.setTitle("Choose Your Own Adventure!");
         frame.pack();
+        //this is what sets up the starting screen with the call to this method (below)
+        this.startView();
         frame.setVisible(true);
     }
 
@@ -187,6 +189,14 @@ public class GUI implements ActionListener {
 
         }
 
+    }
+    //added method to set up the starting screen (labels and such subject to change, this is just a placeholder) When this method is called it will change
+    //the screen to show the starting screen
+    public void startView(){
+      
+      Branch start = new Branch(1, 0, "Start Game", "Start Game2", "morgannn.PNG", "Welcome >:)");
+      this.convert(start);
+    
     }
     
      //the search method will direct the player through the main branches of the story
