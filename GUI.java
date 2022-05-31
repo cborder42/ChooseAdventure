@@ -196,6 +196,12 @@ public class GUI implements ActionListener {
          
             Cave.findNextCave(this);
          }
+          
+         if(p.getCode1() == 2){
+             
+             Water.findNextWater(this);
+             
+         }
          
       }
       
