@@ -11,12 +11,12 @@ public class Water{
      
       //it uses an array of branch objects
       Branch[] water = new Branch[6];
-      Branch water1 = new Branch(2, 1, "3", "4", "water1.PNG", "Which way will you progress?");
-      Branch water2 = new Branch(2, 2, "5", "6", "water2.PNG", "Which way will you progress?");
-      Branch water3 = new Branch(2, 3, "up", "down", "water3.PNG", "can i fly?");
-      Branch water4 = new Branch(2, 4, "left", "right", "water4.PNG", "when is a sloth?");
-      Branch water5 = new Branch(2, 5, "dog", "cat", "water5.PNG", "dog or cat?");
-      Branch water6 = new Branch(2, 6, "yes", "no", "water6.PNG", "help?");
+      Branch water1 = new Branch(2, 1, "yes", "no", "water1.PNG", "can you swim?");
+      Branch water2 = new Branch(2, 2, "yes", "no", "water2.PNG", "would you like a boat");
+      Branch water3 = new Branch(2, 3, "left", "right", "water3.PNG", "do you want to go left or right?");
+      Branch water4 = new Branch(2, 4, "yes", "no", "water4.PNG", "do you want to try?");
+      Branch water5 = new Branch(2, 5, "sail", "motor", "water5.PNG", "sail or a motor");
+      Branch water6 = new Branch(2, 6, "yes", "no", "water6.PNG", "do you think you will make it?");
       water[0] = water1;
       water[1] = water2;
       water[2] = water3;
@@ -82,7 +82,7 @@ public class Water{
 
       
       }
-      else if((p.getCode2() ==6)&& (p.getOp()==2)){
+      else if((p.getCode2() ==3)&& (p.getOp()==1)){
          win(g);
       
       }
@@ -92,7 +92,7 @@ public class Water{
          lost(g);
       
       }
-     
+           
      //it then calls the searchWater method (above) to play, run, update next branch whatever stuff
       
       searchWater(g);
@@ -103,13 +103,53 @@ public class Water{
    
    //these are methods that could be called for if the player lost or something
    public static void lost(GUI g){
-      Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "you lose.");
+      
+       if(p.getCode2()==3){
+         if(p.getOp()==2){
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "oh no! there was a waterfall!!!!");
+         
+         }
+      }
+      
+      else if(p.getCode2()==4){
+         if(p.getOp()==1){
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "idiot you can't swim why would you even try?");
+         
+         }
+         else{
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "you should have tried maybe you would have won...");
+         }
+      
+      }
+      
+      else if(p.getCode2()==5){
+         if(p.getOp()==1){
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "the sails were ripped bye bye");
+         
+         }
+         else{
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "thats bad for the enviornment shame on you...");
+         }
+      
+      }
+      
+       else if(p.getCode2()==6){
+         if(p.getOp()==1){
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "oh the confidence thats embarrassing");
+         
+         }
+         else{
+            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "you were right! straight off the waterfall yay!");
+         }
+      
+      }
+      
       g.convert(lost);
    
    }
    
    public static void win(GUI g){
-      Branch win = new Branch(0,0,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "SO PROUD", "morgannn.jpg", "WINNER");
+      Branch win = new Branch(0,0,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "SO PROUD", "morgannn.jpg", "WINNER WINNER!!! THAT IS RARE SO CONGRATS");
       g.convert(win);
          
    }
