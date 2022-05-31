@@ -1,10 +1,12 @@
+//this imports necessary classes
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class Cave{
 
-
+   //this method loops through the players location code to find where it is and will call the given method (currently just used when finding the previous loction but could be used for more)
    public static void loopCave(GUI g){
       Player p = g.getPlayer();
       int code = p.getCode2();
@@ -32,15 +34,18 @@ public class Cave{
    }
   
       
-  
+  //this is called from the GUI class and wil find which next branch the player is navigating to
    public static void findNextCave(GUI g){
+      //this part is just for when the player has lost, their 2nd code is set to 100
       Player p = g.getPlayer();
       if((p.getCode2() == 100)){
+         //if they choose to restart the game it will call the start view which is in the GUI class
          if(p.getOp() ==1){
             g.startView();
          
          }
          else {
+            //if they choose to go to their last option this sets the players location to the previous location and then loops through where it is to convert graphics
             p.setCode1(p.getLCode1());
             p.setCode2(p.getLCode2());
             loopCave(g);
@@ -54,6 +59,7 @@ public class Cave{
       
      
       else {
+         //this has the rest of navigation, sending the player to a different next place depending on their location
       
          g.getPlayer().setLCode1(g.getPlayer().getCode1());
          g.getPlayer().setLCode2(g.getPlayer().getCode2());
@@ -115,7 +121,8 @@ public class Cave{
       
    
      
-   
+   //these are the methods which contain the branch information for each branch and then call the convert
+   //other changes can also be added to these methods to be implemented
  
    public static void cave1(GUI g){
    
@@ -159,13 +166,13 @@ public class Cave{
       g.convert(cave6);  
    
    }
-   
+   //this is what is shown if they lose
    public static void lost(GUI g){
       Branch lost = new Branch(1,100,"restart section", "go to last option", "cod.PNG", "you lose.");
       g.convert(lost);
    
    }
-   
+   //this is for if they won
    public static void win(GUI g){
       Branch win = new Branch(0,0,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "SO PROUD", "morgannn.jpg", "WINNER");
       g.convert(win);
