@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class Water{
    
   
-   // the searchCave method contains the branches created within the main branch. it takes a GUI object as a parameter which is just the GUI object of the game being played
+   // the searchWater method contains the branches created within the main branch. it takes a GUI object as a parameter which is just the GUI object of the game being played
 
    public static void searchWater(GUI g){
      
