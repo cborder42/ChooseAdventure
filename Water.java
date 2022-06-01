@@ -102,44 +102,50 @@ public class Water{
  
    
    //these are methods that could be called for if the player lost or something
+   
+   //this is a changed version of the lost method, which is what was giving errors
    public static void lost(GUI g){
       
+      Player p = g.getPlayer();
+      //it starts by defining a sort of "default" lost branch so that the branch exists at the end for when the convert method is used
+      Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "you lost...");
        if(p.getCode2()==3){
          if(p.getOp()==2){
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "oh no! there was a waterfall!!!!");
-         
+            //rather than creating the branch in each method, it simply changes the label of the branch using the setLabel method (this is new so make sure u add it to ur branch class)
+            lost.setLabel("oh no! there was a waterfall!!!!");
+                     
          }
       }
       
       else if(p.getCode2()==4){
          if(p.getOp()==1){
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "idiot you can't swim why would you even try?");
+             lost.setLabel("idiot you can't swim why would you even try?");
          
          }
          else{
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "you should have tried maybe you would have won...");
+            lost.setLabel("you should have tried maybe you would have won...");
          }
       
       }
       
       else if(p.getCode2()==5){
          if(p.getOp()==1){
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "the sails were ripped bye bye");
+            lost.setLabel("the sails were ripped bye bye");
          
          }
          else{
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "thats bad for the enviornment shame on you...");
+            lost.setLabel("thats bad for the enviornment shame on you...");
          }
       
       }
       
        else if(p.getCode2()==6){
          if(p.getOp()==1){
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "oh the confidence thats embarrassing");
+            lost.setLabel("oh the confidence thats embarrassing");
          
          }
          else{
-            Branch lost = new Branch(0,0,"XXX", "XXX", "cod.PNG", "you were right! straight off the waterfall yay!");
+            lost.setLabel("you were right! straight off the waterfall yay!");
          }
       
       }
