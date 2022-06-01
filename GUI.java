@@ -212,6 +212,17 @@ public class GUI implements ActionListener {
              Water.findNextWater(this);
              
          }
+          
+         if(p.getCode1()==3){
+             School.findNextSchool(this);
+              
+         }
+          
+         if(p.getCode1()==4){
+            Dorm.findNextDorm(this); 
+             
+         }
+          
          
       }
       
