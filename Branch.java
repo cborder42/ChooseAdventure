@@ -96,6 +96,12 @@ public class Branch{
       
    }
    
+   //this sets the label on the branch
+   public void setLabel(String l){
+      label=l;
+   
+   }
+   
    
    
    public void convertNumtoString(int a){
