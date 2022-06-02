@@ -21,6 +21,8 @@ public class Player{
   private int lcode1;
   private int lcode2;
   private boolean necklace;
+  private int mpt;
+  private int bpt;
     
   
   //constructor/s
@@ -36,6 +38,8 @@ public class Player{
       lcode1 = 1;
       lcode2 = 0;
       op = 0;
+      mpt=0;
+      bpt=0;
       necklace=false;
       
   }
@@ -51,12 +55,23 @@ public class Player{
     lcode1 = 1;
     lcode2 = 0;
     op = 0;
+    mpt=0;
+    bpt=0;
     necklace=false;
   }
  
   
   
   //accessor methods
+  public int getMpt(){
+   return mpt;
+  
+  }
+  
+  public int getBpt(){
+   return bpt;
+  
+  }
   
   public boolean getNecklace(){
     return necklace;
@@ -129,6 +144,26 @@ public class Player{
   
   
   // mutator methods
+  
+  
+  public void setMpt(int i){
+   mpt=i;
+  
+  }
+  public void setBpt(int i){
+   bpt=i;
+  
+  }
+  
+  public void addMpt(int i){
+  
+   mpt+=i;
+  }
+  
+  public void addBpt(int i){
+   bpt+=i;
+  
+  }
   
   public void setNecklace(boolean b){
     necklace = b;
@@ -220,11 +255,7 @@ public class Player{
     winner = true;
   }
   
-  //starts new game in chris's class
-  public Branch startGame(){
-      Branch b1 = new Branch(0);
-      return b1; 
-   }
+  
 
   
   
