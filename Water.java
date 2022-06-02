@@ -309,7 +309,7 @@ public class Water{
    
    public static void water6(GUI g){
    
-      Branch water6 = new Branch(2, 6, "run to the bathroom crying", "say you were going easy on him and go to the bathroom", "water6.PNG", "you LOSE :( Chris beats you in the arm wrestle and you are humiliated.");
+      Branch water6 = new Branch(2, 6, "run to the bathroom crying", "say you were going easy on him and go to the bathroom", "water6.png", "you LOSE :( Chris beats you in the arm wrestle and you are humiliated.");
       
       g.convert(water6);  
       
