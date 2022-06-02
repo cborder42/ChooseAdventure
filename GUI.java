@@ -194,7 +194,7 @@ public class GUI implements ActionListener {
     //the screen to show the starting screen
     public void startView(){
       
-      Branch start = new Branch(1, 0, "Start Game", "Start Game2", "morgannn.PNG", "Welcome >:)");
+      Branch start = new Branch(0, 0, "Crazy Cool Adventure", "Barbie Charm School Adventure of your Dreams", "morgannn.PNG", "Welcome to choose your own adventure!! Which adventure would you like to begin? ");
       this.convert(start);
     
     }
@@ -202,30 +202,35 @@ public class GUI implements ActionListener {
      //the search method will direct the player through the main branches of the story
     // for example a main branch might be the "cave" branch, within the cave branch there would be multiple branch objects of story branches within cave
       public void search(){
-         if(p.getCode1() == 1){
+          if(p.getCode1()==0){
+            if(p.getOp()==1){
+              Water.water0(this);
+            }
+            else{
+               //BarbieSchoolInfo.intro0(this);
+            }
          
-            Cave.findNextCave(this);
-         }
-          
-         if(p.getCode1() == 2){
-             
-             Water.findNextWater(this);
-             
-         }
-          
-         if(p.getCode1()==3){
-             School.findNextSchool(this);
-              
-         }
-          
-         if(p.getCode1()==4){
-            Dorm.findNextDorm(this); 
-             
-         }
-          
+          }
+
+          //else if((p.getCode1() == 1)||(p.getCode1()==5)||(p.getCode1()==6)){
          
+            //BarbieSchoolInfo.findNextbarb(this);
+                    // }
+         
+          else if(p.getCode1()==2){
+         
+            Water.findNextWater(this);
+          }
+         
+          else if(p.getCode1()==3){
+            School.findNextSchool(this);
+         
+          }
+          else if(p.getCode1()==4){
+            Dorm.findNextDorm(this);
+          }
       }
-      
+
       // this method converts the parameters of the GUI class, updating the labels, image, title, etc
       // it takes a branch object which will contain all of this imformation
       public void convert(Branch b){
