@@ -8,7 +8,7 @@ public class Water{
    public static void loopWater(GUI g){
       Player p = g.getPlayer();
       int code = p.getCode2();
-      if(p.getCode1() == 3){
+      if(p.getCode1() == 2){
          if (code == 0){
             water0(g);
          
