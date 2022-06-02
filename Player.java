@@ -20,6 +20,7 @@ public class Player{
   //variables to hold the previous location of the player, follows the same pattern as the codes, just lcode instead
   private int lcode1;
   private int lcode2;
+  private boolean necklace;
     
   
   //constructor/s
@@ -35,6 +36,7 @@ public class Player{
       lcode1 = 1;
       lcode2 = 0;
       op = 0;
+      necklace=false;
       
   }
   public Player(String n, int a){
@@ -49,12 +51,18 @@ public class Player{
     lcode1 = 1;
     lcode2 = 0;
     op = 0;
+    necklace=false;
   }
  
   
   
   //accessor methods
   
+  public boolean getNecklace(){
+    return necklace;
+    
+    
+  }
   //return the last locations
   public int getLCode1(){
    return lcode1;
@@ -122,6 +130,10 @@ public class Player{
   
   // mutator methods
   
+  public void setNecklace(boolean b){
+    necklace = b;
+    
+  }
   //sets the last location
   public void setLCode1(int i){
    lcode1 = i;
