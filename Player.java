@@ -100,7 +100,7 @@ public class Player{
   }
   
   // returns the current choice of the player, option 1 or 2
-  public int getOp{
+  public int getOp(){
     return op;
     
   }
