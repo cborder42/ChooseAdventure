@@ -286,7 +286,7 @@ public class Water{
    
    public static void water3(GUI g){
    
-      Branch water3 = new Branch(2, 3, "Hot tub session in the toilet while reading your favorite book", "eat some chocolate you stole from Chris the other day", "dorm3.PNG", "You ran to the bathroom and you are crying what do you do to calm yourself down?");
+      Branch water3 = new Branch(2, 3, "Hot tub session in the toilet while reading your favorite book", "eat some chocolate you stole from Chris the other day", "water3.PNG", "You ran to the bathroom and you are crying what do you do to calm yourself down?");
       g.convert(water3);  
       
    
