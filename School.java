@@ -285,7 +285,7 @@ public class School{
       
       
    public static void school11(GUI g){
-      Branch school11 = new Branch(3,11, "politely", "angrily", "school11.PNG", "You got to your first class: Dance class. There you see a couple of people: Blair and Nicholas. How do you introduce yourself?");
+      Branch school11 = new Branch(3,11, "politely", "angrily", "school11.PNG", "Once you arrive to school you make it to your first class: Dance class. There you see a couple of people: Blair and Nicholas. How do you introduce yourself?");
       g.convert(school11);
    
    }
