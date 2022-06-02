@@ -338,7 +338,7 @@ public class Dorm{
    }
    
    public static void dorm11(GUI g){
-      Branch dorm11 = new Branch(4,11, "go to the park with Blair", "refuse Blair and go to your meeting with Dame Devin", "dorm11.PNG", "Blair then has to go talk to the school officials, and is eventaully let off with a warning. Soon after, she returns to the dorm where she invites you to go to the park with her. You are supposed to go to your meeting with Dame Devin. What do you do?");
+      Branch dorm11 = new Branch(4,11, "go to the park with Blair", "refuse Blair and go to your meeting with Dame Devin", "dorm11.PNG", "<html>Blair then has to go talk to the school officials, and is eventaully let off with a warning. Soon after, she returns to the dorm where she invites you to go to the park with her.<BR> You are supposed to go to your meeting with Dame Devin. What do you do?</html>");
       g.convert(dorm11);
    
    }
