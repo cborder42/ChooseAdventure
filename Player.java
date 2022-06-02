@@ -74,18 +74,18 @@ public class Player{
   
   }
   //returns the code of the current location as corresponds w/ branch numbers, only 1 code may be necessary, depends
-  public String getCode1(){
+  public int getCode1(){
       return code1;
     
   }
   
-  public String getCode2(){
+  public int getCode2(){
     return code2();
     
   }
   
   // returns the current choice of the player, option 1 or 2
-  public String getOp(){
+  public int getOp{
     return op;
     
   }
