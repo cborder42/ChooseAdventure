@@ -469,19 +469,19 @@ public class Water{
       int c = p.getCode2();
       
       if(c == 9){
-         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.png", "YOU ARE SO BORING YOU REALLY ARE A PIECE OF... poop :((((");
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "lose.png", "YOU ARE SO BORING YOU REALLY ARE A PIECE OF... poop :((((");
          g.convert(lost);
       }
       else if(c == 11){
-         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.png", "YOU GUYS FURTHER CLOGGED THE TOILET AND SO WHEN SOMEONE FLUSHED YOU GUYS DROWNED");
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "lose.png", "YOU GUYS FURTHER CLOGGED THE TOILET AND SO WHEN SOMEONE FLUSHED YOU GUYS DROWNED");
          g.convert(lost);
       }
       else if(c == 18){
-         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.png", "CHRIS HATES YOU FOR SCREAMING BECAUSE IT HURTS HIS EAR AND THROWS YOU AWAY IN THE JENGA BOX");
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "lose.png", "CHRIS HATES YOU FOR SCREAMING BECAUSE IT HURTS HIS EAR AND THROWS YOU AWAY IN THE JENGA BOX");
          g.convert(lost);
       } 
       else if(c == 19){
-         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.png", "YOU GUYS BOTH STAY POOP FOREVER");
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "lose.png", "YOU GUYS BOTH STAY POOP FOREVER");
          g.convert(lost);
       } 
 
