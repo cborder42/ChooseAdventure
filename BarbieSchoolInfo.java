@@ -555,7 +555,7 @@ public class BarbieSchoolInfo{
    }
     public static void intro1(GUI g){
    
-      Branch intro1 = new Branch(1, 1, "slap your face", "try to clean it with the sewage water", "sewer.png", "<html>Clumsy you, as you leave the classroom, you accidentally fell in this sewer in the middle of the hallway! <BR> After landing in the sewage water, you feel this burning sensation on your face that is spreading down your neck and arms and slowly reaches your little toe. You decide to: </html>");
+      Branch intro1 = new Branch(1, 1, "slap your face", "try to clean it with the sewage water", "sewer.png", "<html>Clumsy you, as you leave the classroom, you accidentally fell in this sewer in the middle of the hallway! <BR> After landing in the sewage water, you feel this burning sensation on your face that is spreading down your neck and arms and slowly reaching your little toe. You decide to: </html>");
       g.convert(intro1);  
    
    }
@@ -591,7 +591,7 @@ public class BarbieSchoolInfo{
  
    public static void intro6(GUI g){
    
-      Branch intro6 = new Branch(1, 6, "leave to get a latte", "leave to get iced tea", "friends.png", "<HTML> You walk to Blair and her friends and compliment their new manicure. <BR>You talked about how you got to here from Chris' comp sci class. They are very happy <BR>and wants you to join their school and leave Overlake. <BR>You said you will consider it and walk away to : </HTML>");
+      Branch intro6 = new Branch(1, 6, "leave to get a latte", "leave to get iced tea", "friends.png", "<HTML> You walk to Blair and her friends and compliment their new manicure. <BR>You talked about how you got to here from Chris' comp sci class. They are very happy <BR>and want you to join their school and leave Overlake. <BR>You said you will consider it and walk away to : </HTML>");
       g.convert(intro6);  
    
    }
@@ -646,14 +646,14 @@ public class BarbieSchoolInfo{
    public static void nextDay0(GUI g){ //you accepted the offer to cut stuff
       
       
-      Branch nextDay0 = new Branch(5, 0, "yes", "no", "scissor.png", "<HTML> Dame Devin's fairies offer you a scissor to cut Blair and her friends' uniform while they are eating.<BR> Do you take the scissor and destroy their uniforms?</HTML>");
+      Branch nextDay0 = new Branch(5, 0, "yes", "no", "scissor.png", "<HTML> Dame Devin's fairies offer you scissors to cut Blair and her friends' uniform while they are eating.<BR> Do you take the scissors and destroy their uniforms?</HTML>");
       
       g.convert(nextDay0); 
    
    } 
    public static void nextDay1(GUI g){ //if yes to help fairy
    
-      Branch nextDay1 = new Branch(5, 1, "yes, of course!", "no, gross.", "uniform.png", "<HTML> Blair and her friends came back very shocked and sad because they have to get ready for the coronation of the queen soon <BR>that requires uniform. They could get expelled if they didn't have their uniform! <BR> Blair the smartie decides to sew the pieces together and make their own uniform! <BR> Do you want to join them? </html>");
+      Branch nextDay1 = new Branch(5, 1, "yes, of course!", "no, gross.", "uniform.png", "<HTML> Blair and her friends came back very shocked and sad because they have to get ready for the coronation of the queen soon <BR>that requires their uniforms. They could get expelled if they didn't have their uniform! <BR> Blair the smartie decides to sew the pieces together and make their own uniform! <BR> Do you want to join them? </html>");
       g.convert(nextDay1);
       
    }
@@ -681,7 +681,7 @@ public class BarbieSchoolInfo{
       g.convert(nextDay5);   
    }
    public static void nextDay6(GUI g){ //regardless
-      Branch nextDay6 = new Branch(5, 6, "Tell Dame Devin that everything is made out of uniform material and they should not get expelled", "Agree with Dame Devin", "dameprincipal.png", "<html>It was a fun ride to school, but you all are two seconds late!<BR> You walked up to Dame Devin and the principal standing next to the door.<BR> Dame Devin stares at the new uniform and tells the principal that this is not <BR> school uniform and everyone should get expelled. What do you do? </html> ");
+      Branch nextDay6 = new Branch(5, 6, "Tell Dame Devin that everything is made out of uniform material and they should not get expelled", "Agree with Dame Devin", "dameprincipal.png", "<html>It was a fun ride to school, but you all are two seconds late!<BR> You walked up to Dame Devin and the principal standing next to the door.<BR> Dame Devin stares at the new uniform and tells the principal that these are not <BR>the school uniforms and everyone should get expelled. What do you do? </html> ");
       g.convert(nextDay6);   
    }
    public static void nextDay7(GUI g){ //agree
@@ -693,7 +693,7 @@ public class BarbieSchoolInfo{
       g.convert(nextDay8);
    }
    public static void nextDay9(GUI g){ //regardless
-      Branch nextDay9 = new Branch(5, 9, "Explore the castle with Blair and friends", "stand for 3 hours", "castle.png", "<html> The principal welcomes everyone and allows everyone 2 hours of free time exploring the castle. What do you do? </html>"); 
+      Branch nextDay9 = new Branch(5, 9, "Explore the castle with Blair and friends", "stand for 3 hours", "castle.png", "<html> The principal welcomes everyone and allows everyone 3 hours of free time exploring the castle. What do you do? </html>"); 
       g.convert(nextDay9);
    }
    public static void nextDay10(GUI g){ //explore castle
@@ -786,7 +786,7 @@ public class BarbieSchoolInfo{
          g.convert(final8);
    }
    public static void final9(GUI g){//regardless
-         Branch final9 = new Branch(6, 9, "Accept", "Decline", "adoption.png", "<html>Dame Devin is very happy. To thank you service, she offers to adopt you. </html>"); 
+         Branch final9 = new Branch(6, 9, "Accept", "Decline", "adoption.png", "<html>Dame Devin is very happy. To thank you for your service, she offers to adopt you. </html>"); 
          g.convert(final9);
    }
     public static void final10(GUI g){//accept
@@ -798,7 +798,7 @@ public class BarbieSchoolInfo{
          g.convert(final11);
    }
     public static void final12(GUI g){//regardless 
-         Branch final12 = new Branch(6, 12, "YES!", "I'll pass", "offer.png", "<html>Blair tells you how awesome you are. To thank your service, she offers you the option to marry her or Nicolas. Do you accept? </html>"); 
+         Branch final12 = new Branch(6, 12, "YES!", "I'll pass", "offer.png", "<html>Blair tells you how awesome you are. To thank you for your service, she offers you the option to marry her or Nicolas. Do you accept? </html>"); 
          g.convert(final12);
    }
     public static void final13(GUI g){//no marriage 
