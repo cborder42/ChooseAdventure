@@ -701,7 +701,7 @@ public class BarbieSchoolInfo{
       g.convert(nextDay10);
    }
    public static void nextDay12(GUI g){ //regardless
-      Branch nextDay12 = new Branch(5, 12, "It all adds up...", "Oh no...", "blairstory.png", "<html>Everyone feel exactly how you feel! One of Blair's friends asked about what Blair remembers about her past. She says that she was<BR> adopted by by the wolves on May 2nd of 2000. Her wolf family <BR>found her in a car crash by the castle. How do you react? </html>"); 
+      Branch nextDay12 = new Branch(5, 12, "It all adds up...", "Oh no...", "blairstory.png", "<html>Everyone feels exactly how you feel! One of Blair's friends asked about what Blair remembers about her past. She says that she was<BR> adopted by by the wolves on May 2nd of 2000. Her wolf family <BR>found her in a car crash by the castle. How do you react? </html>"); 
       g.convert(nextDay12);
    }
    public static void nextDay13(GUI g){ //regardless
@@ -709,7 +709,7 @@ public class BarbieSchoolInfo{
       g.convert(nextDay13);
    }
    public static void nextDay14(GUI g){ //join them
-      Branch nextDay14 = new Branch(5, 14, "Break the basement lock with a chair", "Break the basement lock with your hair pin", "lock.png", "<html>You all snuck out the into the basement of the castle where the crown is stored. Coronation is in three hours and you cannot let Dame Devin take over the country! You all decide to: </html>"); 
+      Branch nextDay14 = new Branch(5, 14, "Break the basement lock with a chair", "Break the basement lock with your hair pin", "lock.png", "<html>You all snuck out into the basement of the castle where the crown is stored. Coronation is in three hours and you cannot let Dame Devin take over the country! You all decide to: </html>"); 
       g.convert(nextDay14);
    }
    public static void nextDay15(GUI g){  //regardless
