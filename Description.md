@@ -1,4 +1,11 @@
 # ChooseAdventure
+
+To run to code, simply extract all the files and then open and run the PlayGame class
+
+
+
+Description of the Project:
+
 Repository for Choose Your Own Adventure Project
 Group members: Sonja, Catherine, Chloe, Sujay
 
