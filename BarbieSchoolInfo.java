@@ -749,7 +749,7 @@ public class BarbieSchoolInfo{
          g.convert(nextDay23);
    }
    public static void final0(GUI g){
-         Branch final0 = new Branch(6, 0, "Trip Blair so that the crown falls from her hand", "Ignore Dame Devin", "ddspeech.png", "<html>You all run into the coronation while Dame Devin is doing her speech, saying that she can't wait <BR>to become the new ruler of the nation & the Barbie Charm School. Dame Devin glances over her shoulder and sees Blair with <BR>the crown. She gives you the look, signaling you to take her down. What do you do? </html>");
+         Branch final0 = new Branch(6, 0, "Trip Blair so that the crown falls from her hand", "Ignore Dame Devin", "ddspeech.png", "<html>You all run into the coronation while Dame Devin is giving her speech, saying that she can't wait <BR>to become the new ruler of the nation & the Barbie Charm School. Dame Devin glances over her shoulder and sees Blair with <BR>the crown. She gives you the look, signaling you to take her down. What do you do? </html>");
          g.convert(final0);
    }
    public static void final1(GUI g){//trip blair
