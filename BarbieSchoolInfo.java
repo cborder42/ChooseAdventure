@@ -487,7 +487,7 @@ public class BarbieSchoolInfo{
             else if(p.getCode2()==5){
                p.addBpt(10);
                //ending credit slide
-               final13(g);
+               final14(g);
             }
             else if(p.getCode2()==6){
                //ending credit slide
