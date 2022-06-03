@@ -770,11 +770,11 @@ public class BarbieSchoolInfo{
          g.convert(final4);
    }
     public static void final5(GUI g){//Blair
-         Branch final5 = new Branch(6, 5, "Awesome!", "Meh", "final.png", "<html>Congrats! You are now married to Blair! What a cute couple <3. Congrats on crowning Blair and giving this nation a great ruler. You are incredible. Please rate your adventure: </html>"); 
+         Branch final5 = new Branch(6, 5, "Awesome!", "Meh", "final.png", "<html>Congrats! You are now married to Blair! What a cute couple! Congrats on crowning Blair and giving this nation a great ruler. You are incredible. Please rate your adventure: </html>"); 
          g.convert(final5);
    }
    public static void final6(GUI g){//Nicolas
-         Branch final6 = new Branch(6, 6, "Awesome!", "Meh", "final.png", "<html>Congrats! You are now married to Nicolas! What a cute couple <3. Congrats on crowning Blair and giving this nation a great ruler. You are incredible. Please rate your adventure: </html>"); 
+         Branch final6 = new Branch(6, 6, "Awesome!", "Meh", "final.png", "<html>Congrats! You are now married to Nicolas! What a cute couple! Congrats on crowning Blair and giving this nation a great ruler. You are incredible. Please rate your adventure: </html>"); 
          g.convert(final6);
    }
    public static void final7(GUI g){//ignore dame devin
