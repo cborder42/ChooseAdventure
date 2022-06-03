@@ -207,15 +207,16 @@ public class GUI implements ActionListener {
               Water.water0(this);
             }
             else{
-               //BarbieSchoolInfo.intro0(this);
+               BarbieSchoolInfo.intro0(this);
+                frame.setTitle("Barbie Princess Dream School Adventure");
             }
          
           }
 
-          //else if((p.getCode1() == 1)||(p.getCode1()==5)||(p.getCode1()==6)){
+          else if((p.getCode1() == 1)||(p.getCode1()==5)||(p.getCode1()==6)){
          
-            //BarbieSchoolInfo.findNextbarb(this);
-                    // }
+            BarbieSchoolInfo.findNextbarb(this);
+         }
          
           else if(p.getCode1()==2){
          
@@ -238,8 +239,10 @@ public class GUI implements ActionListener {
          p.setLoc(b.getName());
          p.setCode1(b.getCode1());
          p.setCode2(b.getCode2());
-         frame.setTitle(p.getLoc());
-         
+         if(p.getCode1()==2){
+            frame.setTitle(p.getLoc());
+         }
+
          label.setText(b.getLabel());
          
          button.setLabel(b.getOp1());
