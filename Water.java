@@ -168,16 +168,20 @@ public class Water{
             }   
             
             else{
-               p.setCode2(10);
+               p.setCode2(13);
             
             }    
          }
          
          else if(c==9){
-          if(op==1){
-               p.setCode2(10);
+          
+           if(op==1){
+             p.setCode2(10);
            }
-           p.setCode2(13);
+           
+           else{
+              lost(g);
+           }
          
          }
          else if(c==10){
@@ -207,7 +211,10 @@ public class Water{
                p.setCode2(11);
             }
             
+            else{
              p.setCode2(12);
+             
+             }
             
          
          }
@@ -218,11 +225,19 @@ public class Water{
                p.setCode2(15);
             }
             
+            else{
              p.setCode2(16);
+             
+             }
  
          }            
                      
-         else if(c==15||c==16){
+         else if(c==15){
+         
+            p.setCode2(17);
+         }
+         
+         else if(c == 16){
          
             p.setCode2(17);
          }
@@ -233,7 +248,9 @@ public class Water{
                p.setCode2(18);
             }
             
+             else{
              win(g);
+             }
  
          } 
          
@@ -242,7 +259,9 @@ public class Water{
                lost(g);
             }
             
+             else{
              p.setCode2(19);
+             }
  
          } 
         
@@ -252,7 +271,9 @@ public class Water{
                lost(g);
             }
             
+             else{
              win(g);
+             }
  
          }
                             
@@ -324,7 +345,7 @@ public class Water{
    }
    
    public static void water8(GUI g){
-      Branch water8 = new Branch(2,8, "left", "right", "water8.PNG", "You end up making you way down the pipes and it gets difficult to see but you can feel the sides of the tubes, you continue to make you way down until you reach a split in the road, which way do you want to go?");
+      Branch water8 = new Branch(2,8, "left", "right", "water8.PNG", "You end up making your way down the pipes and it gets difficult to see but you can feel the sides of the tubes, you continue to make you way down until you reach a split in the road, which way do you want to go?");
    
       g.convert(water8);
    
@@ -402,7 +423,7 @@ public class Water{
    }
    
    public static void lost(GUI g){
-      Branch lost = new Branch(35,100,"restart section", "you died", "cod.PNG", "you lose.");
+      Branch lost = new Branch(0,0,"restart section", "you drowned....", "cod.PNG", "you lose.");
       g.convert(lost);
    
    }
