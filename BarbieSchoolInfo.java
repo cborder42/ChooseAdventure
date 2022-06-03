@@ -693,7 +693,7 @@ public class BarbieSchoolInfo{
       g.convert(nextDay8);
    }
    public static void nextDay9(GUI g){ //regardless
-      Branch nextDay9 = new Branch(5, 9, "Explore the castle with Blair and friends", "stand for 2 hours", "castle.png", "<html> The principal welcomes everyone and allows everyone 2 hours of free time exploring the castle. What do you do? </html>"); 
+      Branch nextDay9 = new Branch(5, 9, "Explore the castle with Blair and friends", "stand for 3 hours", "castle.png", "<html> The principal welcomes everyone and allows everyone 2 hours of free time exploring the castle. What do you do? </html>"); 
       g.convert(nextDay9);
    }
    public static void nextDay10(GUI g){ //explore castle
