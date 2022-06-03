@@ -423,13 +423,13 @@ public class Water{
    }
    
    public static void lost(GUI g){
-      Branch lost = new Branch(0,0,"restart section", "you drowned....", "cod.PNG", "you lose.");
+      Branch lost = new Branch(0,0,"restart section", "you DIEDDDDDD....", "die.PNG", "you lose.");
       g.convert(lost);
    
    }
    
    public static void win(GUI g){
-      Branch win = new Branch(0,0,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "SO PROUD", "morgannn.jpg", "CHRIS SWITCHES YOU BACK INTO A HUMAN YAYYYY AND GIVES YOU A HUNDRED ON THE COMPSCI ASSIGMENT!!!!");
+      Branch win = new Branch(0,0,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA PLAY AGAIN????", "SO PROUD", "win.PNG", "CHRIS SWITCHES YOU BACK INTO A HUMAN YAYYYY AND GIVES YOU A HUNDRED ON THE COMPSCI ASSIGMENT!!!!");
       g.convert(win);
          
    }
