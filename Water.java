@@ -82,7 +82,21 @@ public class Water{
             water19(g);
          
          }
+          else if (code == 20){
+            lost(g);
+         
+         }
+          else if (code == 21){
+            win(g);
+         
+         }
+          else if (code == 22){
+            credits(g);
+         
+         }
       }
+     
+
    
    }
   
@@ -276,6 +290,27 @@ public class Water{
              }
  
          }
+         else if(c==20){
+            
+            if(op==1){
+               water0(g);
+            }
+            
+  
+         }
+          else if(c==21){
+            
+            if(op==1){
+               water0(g);
+            }
+            else{
+               p.setCode2(22);
+            }
+         }
+ 
+            
+  
+      
                             
          loopWater(g);
      
@@ -421,20 +456,24 @@ public class Water{
       Branch water19 = new Branch(2,19, "no", "yes", "water19.PNG", "Now you guys are both poop do you want to make a deal and turn eachother back?");
       g.convert(water19);
    }
+ 
    
    public static void lost(GUI g){
-      Branch lost = new Branch(0,0,"restart section", "you DIEDDDDDD....", "die.PNG", "you lose.");
+      Branch lost = new Branch(2,20,"restart section", "you DIEDDDDDD....", "die.PNG", "you lose.");
       g.convert(lost);
    
    }
    
    public static void win(GUI g){
-      Branch win = new Branch(0,0,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA PLAY AGAIN????", "SO PROUD", "win.PNG", "CHRIS SWITCHES YOU BACK INTO A HUMAN YAYYYY AND GIVES YOU A HUNDRED ON THE COMPSCI ASSIGMENT!!!!");
+      Branch win = new Branch(2,21,"YEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA PLAY AGAIN????", "Credits>>", "win.PNG", "CHRIS SWITCHES YOU BACK INTO A HUMAN YAYYYY AND GIVES YOU A HUNDRED ON THE COMPSCI ASSIGMENT!!!!");
       g.convert(win);
+     
          
+   }
+     public static void credits(GUI g){//final 
+         Branch credits = new Branch(2,22, ":D", "goodbye now", "nothing.png", "<html>This Choose Your Own Adventure Game is made by Sonja Larson, Catherine Liu, & Chloe Kim.</html>"); 
+         g.convert(credits);
    }
 
      
 } 
-
-   
