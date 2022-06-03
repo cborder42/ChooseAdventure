@@ -689,7 +689,7 @@ public class BarbieSchoolInfo{
       g.convert(nextDay7);   
    }
    public static void nextDay8(GUI g){ //dont agree
-      Branch nextDay8 = new Branch(5, 8, "Walk by Blair", "Walk in separately to not get associated with Blair", "dameprincipal.png", "<html>Dame Devin gives you the death stare. The prinicipal, however, agrees with your point and let you all in to the castle. </html>");
+      Branch nextDay8 = new Branch(5, 8, "Walk by Blair", "Walk in separately to not get associated with Blair", "deathstare.png", "<html>Dame Devin gives you the death stare. The prinicipal, however, agrees with your point and let you all in to the castle. </html>");
       g.convert(nextDay8);
    }
    public static void nextDay9(GUI g){ //regardless
