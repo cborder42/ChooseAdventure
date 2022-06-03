@@ -212,7 +212,12 @@ public class Water{
          
          else if(c==11){
          
-             p.setCode2(12);
+             if(op==1){
+               p.setCode2(12);
+            }
+            else{
+               lost(g);
+            }
          }
          
          else if(c==12){
@@ -459,8 +464,27 @@ public class Water{
  
    
    public static void lost(GUI g){
-      Branch lost = new Branch(2,20,"restart section", "you DIEDDDDDD....", "die.PNG", "you lose.");
-      g.convert(lost);
+   
+      Player p = g.getPlayer();
+      int c = p.getCode2();
+      
+      if(c == 9){
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.PNG", "YOU ARE SO BORING YOU REALLY ARE A PIECE OF... poop :((((");
+         g.convert(lost);
+      }
+      else if(c == 11){
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.PNG", "YOU GUYS FURTHER CLOGGED THE TOILET AND SO WHEN SOMEONE FLUSHED YOU GUYS DROWNED");
+         g.convert(lost);
+      }
+      else if(c == 18){
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.PNG", "CHRIS HATES YOU FOR SCREAMING BECAUSE IT HURTS HIS EAR AND THROWS YOU AWAY IN THE JENGA BOX");
+         g.convert(lost);
+      } 
+      else if(c == 19){
+         Branch lost = new Branch(2,20,"restart section", "YOU LOSE", "die.PNG", "YOU GUYS BOTH STAY POOP FOREVER");
+         g.convert(lost);
+      } 
+
    
    }
    
@@ -475,5 +499,4 @@ public class Water{
          g.convert(credits);
    }
 
-     
-} 
+}    
